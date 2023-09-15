@@ -1,0 +1,8 @@
+﻿@page "/unicorns/{Identifier:int}"
+@inject IDbContextFactory<UnicornDbContext> ContextFactory
+
+
+@if(_Unicorn != null)
+{
+    <span>@_Unicorn.Name</span>
+}

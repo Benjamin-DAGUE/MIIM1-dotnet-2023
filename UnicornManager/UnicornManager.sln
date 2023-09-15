@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicornManager", "UnicornManager\UnicornManager.csproj", "{BF88CC30-EDE3-40C0-8032-7261BCB69367}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnicornManager.DBLib", "UnicornManager.DBLib\UnicornManager.DBLib.csproj", "{03285600-FE01-4C4A-B424-F3CBFD624618}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF88CC30-EDE3-40C0-8032-7261BCB69367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF88CC30-EDE3-40C0-8032-7261BCB69367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF88CC30-EDE3-40C0-8032-7261BCB69367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF88CC30-EDE3-40C0-8032-7261BCB69367}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03285600-FE01-4C4A-B424-F3CBFD624618}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03285600-FE01-4C4A-B424-F3CBFD624618}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03285600-FE01-4C4A-B424-F3CBFD624618}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03285600-FE01-4C4A-B424-F3CBFD624618}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {577E1CE2-F513-48D4-8E67-17ED0E2B18DD}
+	EndGlobalSection
+EndGlobal

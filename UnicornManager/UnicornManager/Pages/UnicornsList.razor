@@ -1,0 +1,33 @@
+﻿@page "/unicorns"
+@inject IDbContextFactory<UnicornDbContext> ContextFactory
+
+
+<h3>UnicornsList</h3>
+
+<MudTable T="Unicorn" Items="_Unicorns" Loading=_IsLoading Emp>
+    <HeaderContent>
+        <MudTh>Id</MudTh>
+        <MudTh>Name</MudTh>
+        <MudTh>Birthdate</MudTh>
+        <MudTh></MudTh>
+    </HeaderContent>
+    <ColGroup>
+        <col />
+        <col />
+        <col />
+        <col style="width:80px;" />
+    </ColGroup>
+    <RowTemplate>
+        <MudTd DataLabel="Id">@context.Identifier</MudTd>
+        <MudTd DataLabel="Name">@context.Name</MudTd>
+        <MudTd DataLabel="Birthdate">@context.Birthdate</MudTd>
+        <MudTd>
+            <div class="d-flex">
+                <MudIconButton Icon="@Icons.Material.Filled.Edit" Href="@("/unicorns/" + context.Identifier)" />
+                <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" />
+            </div>
+        </MudTd>
+    </RowTemplate>
+</MudTable>
+
+

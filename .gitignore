@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/UnicornManager/UnicornManager/unciorn.db
+/UnicornManager/UnicornManager/unciorn.db-shm
+/UnicornManager/UnicornManager/unciorn.db-wal
