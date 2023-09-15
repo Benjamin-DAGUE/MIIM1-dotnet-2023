@@ -1,0 +1,32 @@
+﻿@page "/"
+@inject ISnackbar Snackbar
+
+<MudPaper Class="pa-16 ma-2" Elevation="3">
+    <h1>Hello, world!</h1>
+</MudPaper>
+
+@* <MudTextField T="string" Text="@_Text" TextChanged="TextChanged" Immediate="true" /> *@
+@* <MudTextField T="string" @bind-Text=_Text @bind-Text:after=AfterTextChanged Immediate="true" /> *@
+<BenTextField @bind-Text=@_Text />
+
+<MudButton  StartIcon="@Icons.Material.Filled.Search"
+            Color="Color.Primary" 
+            Variant="Variant.Filled"
+            OnClick="OnClick"    >
+            
+    <span>@_Text</span>
+</MudButton>
+
+@code {
+    private string _Text = "test";
+
+    private void AfterTextChanged()
+    {
+        _Text = "toto";
+    }
+
+    // private void TextChanged(string newText)
+    // {
+    //     _Text = newText;
+    // }
+}
